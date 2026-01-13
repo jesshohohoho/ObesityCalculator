@@ -10,10 +10,7 @@ app = FastAPI(title="Obesity Classification API")
 # Configure CORS to allow frontend to communicate with backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",  # Local testing
-        "https://*.vercel.app"     # Your Vercel deployment
-    ],
+    allow_origins=["*"],  # Allow all origins (you can restrict this to your Vercel domain later)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
