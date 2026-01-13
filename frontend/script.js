@@ -1,5 +1,5 @@
 // Configuration - Update this with your backend URL
-const API_URL = 'http://localhost:8000';  // Change to your Render URL after deployment
+const API_URL = 'https://obesitycalculator.onrender.com';  // Change to your Render URL after deployment
 
 const form = document.getElementById('obesityForm');
 const resultDiv = document.getElementById('result');
